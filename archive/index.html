@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>redk1tty</title>
+<link rel="icon" href="/assets/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.cdnfonts.com/css/fortyseven-micro-nbp');
+@import url('https://fonts.cdnfonts.com/css/motorola-screentype');
+@import url('https://fonts.cdnfonts.com/css/videotype');
+@import url('https://fonts.cdnfonts.com/css/pixel-square');
+@import url('https://fonts.cdnfonts.com/css/hello-ai');
+@import url('https://fonts.cdnfonts.com/css/wendy');
+@font-face {
+  font-family: "SD Auto Pilot";
+  src: url("/assets/sd_auto_pilot.woff");
+}
+/* For browsers that support `scrollbar-*` properties */
+@supports (scrollbar-color: auto) {
+  :root {
+    scrollbar-color: #9b0017 #560006;
+  }
+}
+
+/* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
+@supports selector(::-webkit-scrollbar) {
+  ::-webkit-scrollbar {
+    background: #e60021;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #08002C;
+  }
+}
+
+    ::selection {
+        background: #e6002188;
+    }
+    html {
+        background: url('/assets/bg.png');
+        background-size: 100%;
+    }
+    body {
+        font-family: 'FortySeven Micro NBP', sans-serif;
+        margin: 0;
+    }
+    h1,
+        h2 {
+            line-height: 0;
+            margin-bottom: 40px;
+        }
+        h3 {
+            line-height: 0;
+            margin-bottom: 20px;
+            font-family: 'Videotype', sans-serif;
+            font-weight: normal;
+        }
+    h2 {
+        filter: drop-shadow(0px 2px #08002C) drop-shadow(0 -2px #08002C) drop-shadow(2px 0 #08002C) drop-shadow(-2px 0 #08002C);
+            text-shadow: 0px 5px 0 #08002C, 0px 2px 0 #08002C, 0px -1px 0 #08002C, 0px -1px 0 #08002C;
+            color: white;
+            font-family: 'Motorola ScreenType', sans-serif;
+            font-size: 200%;
+            line-height: none;
+    }
+    .container {
+        border: 4px solid #13002C;
+        background: #fff;
+        color: #08002C;
+        width: 98%;
+        margin: auto;
+        display: flex;
+    }
+    aside {
+        width: 200px;
+        background: #13002C;
+        color: #fff;
+        padding: 8px;
+        text-align: center;
+    }
+    main {
+        padding: 10px;
+        width: 100%;
+    }
+    .chat {
+        border: 3px double #aaa;
+        background: #000;
+        color: #aaa;
+        width: 250px;
+    }
+    a {
+        color: #e60021;
+    }
+    a:hover {
+        color: #a10030;
+    }
+    .center {
+        text-align: center;
+    }
+    .center a {
+        text-decoration: none;
+        background: none;
+    }
+.social {
+	transition: 0.2s;
+    filter: contrast(0%) brightness(0);
+    opacity: 80%;
+}
+.social:hover {
+	transform: scale(1.1);
+    transition: 0.2s;
+    filter: contrast(1) brightness(1);
+    opacity: 100%;
+}
+footer {
+    text-align: center;
+    background: black;
+    color: red;
+    padding: 5px;
+    font-family: 'Hello AI', sans-serif;
+                                                
+}
+.box {
+  background-color: #0e0203;
+  border: 1px solid #e60021;
+  padding: 10px;
+  text-align: left;
+}
+.box p {
+    font-size: 16px;
+}
+nav {margin: 0;}
+#navbar {
+        height: 40px;
+        background-color: #0000008c;
+        backdrop-filter: blur(30px);
+        /* navbar color */
+        width: 97.51%;
+        padding: 15px;
+        margin: none;
+        transform: translate(0, -5px);
+    }
+
+    #navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #navbar li {
+        padding-top: 10px;
+        font-family: "SD Auto Pilot", cursive;
+        font-weight: normal;
+        transition: 0.5s;
+        transform: translate(0px, -18px);
+    }
+
+    /* navigation links*/
+    #navbar li a {
+        color: #e60021;
+        background: #2d0913;
+        padding: 5px;
+        border: 4px solid #e60021;
+        border-radius: 5px;
+        /* navbar text color */
+        text-decoration: none;
+        /* this removes the underline */
+        transition: 0.5s;
+        font-size: 48px;
+    }
+
+    /* navigation link when a link is hovered over */
+    #navbar li.odd:hover {
+        transform: rotate(-5deg);
+    }
+    #navbar li.even:hover {
+        transform: rotate(5deg);
+    }
+    footer a{
+        color: inherit;
+        text-decoration: none;
+    }
+    p {
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <img src="/assets/banner.png" width="100%" style="image-rendering: pixelated;">
+    <nav id="navbar" style="margin-bottom: 0px;">
+        <ul>
+            <li class="odd"><a href="/home">Home</a></li>
+            <li class="even"><a href="https://blog.redk1tty.net/">Blog</a></li>
+            <li class="odd"><a href="/archive/">Archive</a></li>
+        </ul>
+    </nav> 
+    <br>
+    <div class="center">
+
+        <audio src="/assets/solarselector.flac" controls loop></audio>
+    </div><br>
+<div class="container">
+    <main>
+        <div class="center">
+        <h2>archive</h2>
+        <p>previous versions of my site i could find</p>
+        <a href="/archive/desktop/">"desktop" era (january - feburary 2024)</a><br>
+        <a href="/archive/fm/">"fm" era (january 2024)</a><br>
+        <a href="/archive/emo/">"emo" era (december 2023 - january 2024)</a><br>
+        <a href="/archive/karla/">"karla" era (febuary 2022)</a><br>
+    </div>
+</main>
+</div>
+<br>
+<footer>
+    <!-- FC2 Counter  Starts here -->
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39402623&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39402623&main=1" /></noscript>
+<!-- FC2 Counter  Ends here --><br>
+    <span><span style="font-family: 'wendy', sans-serif;">*</span> 2<a href="/outside">0</a>24 redk1tty. copying is an act of love. please copy.</span>
+</footer>
+</body>
+</html>

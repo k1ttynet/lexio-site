@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>lexio :3</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:title" content="lexio !!" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lexio.buzz" />
+<meta property="og:description" content="my silly website :3333" />
+<meta name="theme-color" content="#FF0000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+	<style>
+.sly {
+  transition: all ease .5s;
+}
+		.sly:active {
+  transform: scale(0.9);
+}
+	</style>
+</head>
+<body>
+<div id="warning" class="center">
+<table>
+<tr>
+<td>
+<img src="https://cdn.lexio.buzz/doom.png" class="sly" width="150" onclick="playAudio('https://sparklecarehospital.com/cometcare/icons/squeak.wav')">
+</td>
+<td>
+<h2>DOOM</h2>
+<div id="well">
+<button onclick="logIn()">LOG IN</button><br><br><span></span><input type="checkbox" id="vehicle1" name="vehicle1" value="Bike" onclick="fullscreen()"><label for="vehicle1"> FULLSCREEN MODE</label><br><br><img src="https://cdn.lexio.buzz/js-warning.gif" class="badge"><img src="https://cdn.lexio.buzz/autoplayingmusic.png" class="badge"></p></div>
+<div id="deep" style="display: none;">
+<p>LOADING...</p></div>
+	<a href="https://citycountry.town/@lexio" style="display: none;">Ayyy Lmao Check Me Out on the Masto's Dons.</a>
+</td>
+</tr>
+</table>
+</div>
+<div id="desktop" style="display: none;">
+<div id="window">
+  <div id="titlebar">MUSIC</div>
+  <div style="padding: 5px;">
+  <form>
+  <input type="radio" id="html" name="fav_language" value="HTML" onclick="if (document.getElementById('url').value == 'sss.links') {document.getElementById('music').src = 'https://cdn.lexio.buzz/YESCLIP - SOLARSELECTOR (1).mp3'; document.getElementById('track').innerHTML = 'YESCLIP - SOLARSELECTOR';}else{document.getElementById('music').src = 'https://cdn.lexio.buzz/whistle.mp3';} document.getElementById('radiotrack').style.display = 'none'; document.getElementById('pmtrack').style.display = 'block';">
+  <label for="html">not live</label>
+  <input type="radio" id="css" name="fav_language" value="CSS" onclick="window.location.href = 'https://soundcloud.com/6016/closing';">
+  <label for="css">lexio.fm (dead)</label><br>
+</form><br>
+<audio controls autoplay id="music" loop></audio>
+<br>
+<i id="pmtrack" style="display: none;">♪ <span id="track">leroy - the dariacore to YTP pipeline</span></i>
+<i id="radiotrack" style="display: none;">♪ <span id="awesome"></span></i>
+</div>
+</div>
+<div id="windowtwo">
+  <div id="titlebartwo">INTRANET EXPLODER</div>
+  <div style="padding: 5px;">
+    <input type="text" disabled value="sss.lexio" id="url"></input>
+  </div>
+  <iframe src="pages/index" width="521vw" height="205vh" id="iframe"></iframe>
+</div>
+
+<div id="stuff" style="display: none;">
+<div id="notporn">
+</div>
+<div id="taskbar">
+<button>START</button>
+</div>
+</div>
+</div>
+<script>
+function startBtn() {
+  var x = document.getElementById('startbuttons');
+  if (x.style.display === 'none') {
+    x.style.display = 'inline-block';
+  } else {
+    x.style.display = 'none';
+  }
+}
+function mhPain() {
+  var mentos = document.getElementById("windowthree");
+  mentos.classList.remove("close");
+  mentos.classList.add("opendelayno");
+  mentos.style.display = "block";
+}
+function closeBtn() {
+  var mentos = document.getElementById("windowthree");
+  mentos.classList.remove("opendelayno");
+  mentos.classList.add("close");
+}
+</script>
+<script>
+var storedText;
+setInterval(fetchlol, 1000);
+function fetchlol() {
+	fetch('https://api.radioking.io/widget/radio/lexio-fm/track/current')
+	  .then(function(response) {
+	    response.text().then(function(text) {
+	      storedText = text;
+	      done()
+	    });
+	  });
+}
+  
+function done() {
+	const obj = JSON.parse(storedText);
+	document.getElementById("awesome").innerHTML =
+	obj.artist + " - " + obj.title;
+}
+</script>
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("window"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "titlebar")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "titlebar").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("windowtwo"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "titlebartwo")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "titlebartwo").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+<script>
+var elem = document.documentElement;
+function fullscreen() {
+	if (!window.screenTop && !window.screenY) {
+	    closeFullscreen();
+	} else {openFullscreen();}
+}
+function openFullscreen() {
+  if (elem.requestFullscreen) {
+    elem.requestFullscreen();
+  } else if (elem.webkitRequestFullscreen) { /* Safari */
+    elem.webkitRequestFullscreen();
+  } else if (elem.msRequestFullscreen) { /* IE11 */
+    elem.msRequestFullscreen();
+  }
+}
+
+/* Close fullscreen */
+function closeFullscreen() {
+  if (document.exitFullscreen) {
+    document.exitFullscreen();
+  } else if (document.webkitExitFullscreen) { /* Safari */
+    document.webkitExitFullscreen();
+  } else if (document.msExitFullscreen) { /* IE11 */
+    document.msExitFullscreen();
+  }
+}
+
+function logIn() {
+  const ele = document.getElementById("well");
+  const m = document.getElementById("deep");
+  const ent = document.getElementById("warning");
+  ele.style.display = "none";
+  m.style.display = "block";
+  setTimeout(() => { ent.style.display = "none"; }, 800);
+  setTimeout(() => { document.getElementById("desktop").style.display = "block"; var audio = new Audio('https://cdn.lexio.buzz/startup.wav');
+audio.play();}, 1000);
+  setTimeout(() => { document.getElementById("stuff").style.display = "block"; }, 1200);
+  var element = document.getElementById("window");
+  element.classList.add("open");
+  var ment = document.getElementById("windowtwo");
+  ment.classList.add("open");
+}
+
+</script>
+	<script>
+
+var audio = new Audio(url);
+
+function playAudio(url) {
+  new Audio(url).play();
+}
+</script>
+</body>
+</html>

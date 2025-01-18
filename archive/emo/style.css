@@ -1,0 +1,10 @@
+* {font-family: 'MS Serif', serif;}
+
+body {
+  background-color: black;
+  color: red;
+}
+a {
+  background-color: red;
+  color: black;
+}
