@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>redk1tty</title>
+<link rel="icon" href="/assets/favicon.ico">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@import url('https://fonts.cdnfonts.com/css/fortyseven-micro-nbp');
+@import url('https://fonts.cdnfonts.com/css/motorola-screentype');
+@import url('https://fonts.cdnfonts.com/css/videotype');
+@import url('https://fonts.cdnfonts.com/css/pixel-square');
+@import url('https://fonts.cdnfonts.com/css/hello-ai');
+@import url('https://fonts.cdnfonts.com/css/wendy');
+@font-face {
+  font-family: "SD Auto Pilot";
+  src: url("/assets/sd_auto_pilot.woff");
+}
+/* For browsers that support `scrollbar-*` properties */
+@supports (scrollbar-color: auto) {
+  :root {
+    scrollbar-color: #9b0017 #560006;
+  }
+}
+
+/* Otherwise, use `::-webkit-scrollbar-*` pseudo-elements */
+@supports selector(::-webkit-scrollbar) {
+  ::-webkit-scrollbar {
+    background: #e60021;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #08002C;
+  }
+}
+
+    ::selection {
+        background: #e6002188;
+    }
+    html {
+        background: url('/assets/bg.png');
+        background-size: 100%;
+    }
+    body {
+        font-family: 'FortySeven Micro NBP', sans-serif;
+        margin: 0;
+    }
+    h1,
+        h2 {
+            line-height: 0;
+            margin-bottom: 40px;
+        }
+        h3 {
+            line-height: 0;
+            margin-bottom: 20px;
+            font-family: 'Videotype', sans-serif;
+            font-weight: normal;
+        }
+    h2 {
+        filter: drop-shadow(0px 2px #08002C) drop-shadow(0 -2px #08002C) drop-shadow(2px 0 #08002C) drop-shadow(-2px 0 #08002C);
+            text-shadow: 0px 5px 0 #08002C, 0px 2px 0 #08002C, 0px -1px 0 #08002C, 0px -1px 0 #08002C;
+            color: white;
+            font-family: 'Motorola ScreenType', sans-serif;
+            font-size: 200%;
+            line-height: none;
+    }
+    .container {
+        border: 4px solid #13002C;
+        background: #fff;
+        color: #08002C;
+        width: 98%;
+        margin: auto;
+        display: flex;
+    }
+    aside {
+        width: 200px;
+        background: #13002C;
+        color: #fff;
+        padding: 8px;
+        text-align: center;
+    }
+    main {
+        padding: 10px;
+        width: 100%;
+    }
+    .chat {
+        border: 3px double #aaa;
+        background: #000;
+        color: #aaa;
+        width: 250px;
+    }
+    a {
+        color: #e60021;
+    }
+    a:hover {
+        color: #a10030;
+    }
+    .center {
+        text-align: center;
+    }
+    .center a {
+        text-decoration: none;
+        background: none;
+    }
+.social {
+	transition: 0.2s;
+    filter: contrast(0%) brightness(0);
+    opacity: 80%;
+}
+.social:hover {
+	transform: scale(1.1);
+    transition: 0.2s;
+    filter: contrast(1) brightness(1);
+    opacity: 100%;
+}
+footer {
+    text-align: center;
+    background: black;
+    color: red;
+    padding: 5px;
+    font-family: 'Hello AI', sans-serif;
+                                                
+}
+.box {
+  background-color: #0e0203;
+  border: 1px solid #e60021;
+  padding: 10px;
+  text-align: left;
+}
+.box p {
+    font-size: 16px;
+}
+nav {margin: 0;}
+#navbar {
+        height: 40px;
+        background-color: #0000008c;
+        backdrop-filter: blur(30px);
+        /* navbar color */
+        width: 97.51%;
+        padding: 15px;
+        margin: none;
+        transform: translate(0, -5px);
+    }
+
+    #navbar ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    #navbar li {
+        padding-top: 10px;
+        font-family: "SD Auto Pilot", cursive;
+        font-weight: normal;
+        transition: 0.5s;
+        transform: translate(0px, -18px);
+    }
+
+    /* navigation links*/
+    #navbar li a {
+        color: #e60021;
+        background: #2d0913;
+        padding: 5px;
+        border: 4px solid #e60021;
+        border-radius: 5px;
+        /* navbar text color */
+        text-decoration: none;
+        /* this removes the underline */
+        transition: 0.5s;
+        font-size: 48px;
+    }
+
+    /* navigation link when a link is hovered over */
+    #navbar li.odd:hover {
+        transform: rotate(-5deg);
+    }
+    #navbar li.even:hover {
+        transform: rotate(5deg);
+    }
+    footer a{
+        color: inherit;
+        text-decoration: none;
+    }
+    p {
+        font-size: 20px;
+    }
+</style>
+</head>
+<body>
+    <img src="/assets/banner.png" width="100%" style="image-rendering: pixelated;">
+    <nav id="navbar" style="margin-bottom: 0px;">
+        <ul>
+            <li class="odd"><a href="/home">Home</a></li>
+            <li class="even"><a href="https://blog.redk1tty.net/">Blog</a></li>
+            <li class="odd"><a href="/archive/">Archive</a></li>
+        </ul>
+    </nav> 
+    <br>
+<div class="center">
+
+    <audio src="/assets/aljon.flac" controls loop></audio>
+</div><br>
+<div class="container">
+<aside id="leftSidebar">
+    <h3>changelog</h3>
+    <div class="box">
+	<p>1/17/2025: we're live!!!! hi!!! hello!!!</p>
+        <p>12/27/2024: added 2 files to the archive</p>
+        <p>12/26/2024: made the site, lol</p>
+    </div>
+</aside>
+    <main>
+        <h2>haiii !! :333</h2>
+        <p>i'm redk1tty, he/they, but you can just call me lexio. i'm a 15y.o. bisexual cat that streams, programs, makes art occasionally, and makes music... sometimes.</p>
+<p>this website is meant to stand for a space where i can stream and put stuff i like here. i started making websites for myself on <a href="https://neocities.org">neocities</a> because my internet randomly stopped working for certain sites, then i just kept going, i guess</p>
+<div class="center">
+<p>if you like what you see, check out my socials!</p>
+<a href="https://youtube.com/@redk1tty">
+    <svg viewBox="0 0 24 24" fill="red" class="social" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><title>YouTube (@redk1tty)</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+</a>
+    <a href="https://x.com/redk1tty"><svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" viewBox="0 0 248 204" width="30" height="30" class="social">
+        <title>Twitter (@redk1tty)</title>
+          <path fill="#1d9bf0" d="M221.95 51.29c.15 2.17.15 4.34.15 6.53 0 66.73-50.8 143.69-143.69 143.69v-.04c-27.44.04-54.31-7.82-77.41-22.64 3.99.48 8 .72 12.02.73 22.74.02 44.83-7.61 62.72-21.66-21.61-.41-40.56-14.5-47.18-35.07 7.57 1.46 15.37 1.16 22.8-.87-23.56-4.76-40.51-25.46-40.51-49.5v-.64c7.02 3.91 14.88 6.08 22.92 6.32C11.58 63.31 4.74 33.79 18.14 10.71c25.64 31.55 63.47 50.73 104.08 52.76-4.07-17.54 1.49-35.92 14.61-48.25 20.34-19.12 52.33-18.14 71.45 2.19 11.31-2.23 22.15-6.38 32.07-12.26-3.77 11.69-11.66 21.62-22.2 27.93 10.01-1.18 19.79-3.86 29-7.95-6.78 10.16-15.32 19.01-25.2 26.16z"></path>
+        </svg></a>
+        <a href="https://wetdry.world/@lexio"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 196.52 196.52" class="social">
+            <title>Fediverse (@lexio@wetdry.world)</title>
+                <path fill="#a730b8" d="M47.9242 72.7966a18.2278 18.2278 0 0 1-7.7959 7.7597l42.7984 42.9653 10.3182-5.2291zm56.4524 56.6704-10.3182 5.2291 21.686 21.7708a18.2278 18.2278 0 0 1 7.7975-7.7608z"></path>
+                <path fill="#5496be" d="M129.6645 102.0765l1.7865 11.4272 27.4149-13.8942a18.2278 18.2278 0 0 1-4.9719-9.8124zm-14.0658 7.1282-57.2891 29.0339a18.2278 18.2278 0 0 1 4.9728 9.8133l54.1027-27.4194z"></path>
+                <path fill="#ce3d1a" d="M69.5312 91.6539l8.1618 8.1933 29.269-57.1387a18.2278 18.2278 0 0 1-9.787-5.0219zm-7.1897 14.0363-14.0022 27.3353a18.2278 18.2278 0 0 1 9.786 5.0214l12.3775-24.1639z"></path>
+                <path fill="#d0188f" d="M39.8906 80.6763a18.2278 18.2278 0 0 1-10.8655 1.7198l8.1762 52.2981a18.2278 18.2278 0 0 1 10.8645-1.7198z"></path>
+                <path fill="#5b36e9" d="M63.3259 148.3109a18.2278 18.2278 0 0 1-1.7322 10.8629l52.2893 8.3907a18.2278 18.2278 0 0 1 1.7322-10.8629z"></path>
+                <path fill="#30b873" d="M134.9148 146.9182a18.2278 18.2278 0 0 1 9.788 5.0224l24.1345-47.117a18.2278 18.2278 0 0 1-9.7875-5.0229z"></path>
+                <path fill="#ebe305" d="M126.1329 33.1603a18.2278 18.2278 0 0 1-7.7975 7.7608l37.3765 37.5207a18.2278 18.2278 0 0 1 7.7969-7.7608z"></path>
+                <path fill="#f47601" d="M44.7704 51.6279a18.2278 18.2278 0 0 1 4.9723 9.8123l47.2478-23.9453a18.2278 18.2278 0 0 1-4.9718-9.8113z"></path>
+                <path fill="#57c115" d="M118.2491 40.9645a18.2278 18.2278 0 0 1-10.8511 1.8123l4.1853 26.8 11.42 1.8324zm-4.2333 44.1927 9.8955 63.3631a18.2278 18.2278 0 0 1 10.88-1.6278l-9.355-59.9035z"></path>
+                <path fill="#dbb210" d="M49.7763 61.6412a18.2278 18.2278 0 0 1-1.694 10.8686l26.8206 4.3077 5.2715-10.2945zm45.9677 7.382-5.272 10.2955 63.3713 10.1777a18.2278 18.2278 0 0 1 1.7606-10.8593z"></path>
+                <path fill="#ffca00" d="M93.4385 23.8419a1 1 0 1 0 33.0924 1.8025 1 1 0 1 0-33.0924-1.8025"></path>
+                <path fill="#64ff00" d="M155.314 85.957a1 1 0 1 0 33.0923 1.8025 1 1 0 1 0-33.0923-1.8025"></path>
+                <path fill="#00a3ff" d="M115.3466 163.9824a1 1 0 1 0 33.0923 1.8025 1 1 0 1 0-33.0923-1.8025"></path>
+                <path fill="#9500ff" d="M28.7698 150.0898a1 1 0 1 0 33.0923 1.8025 1 1 0 1 0-33.0923-1.8025"></path>
+                <path fill="#ff0000" d="M15.2298 63.4781a1 1 0 1 0 33.0923 1.8025 1 1 0 1 0-33.0923-1.8025"></path>
+            </svg>
+        </a>
+        <a href="https://bsky.app/profile/redk1tty.net">
+            <svg fill="#0285FF" class="social" role="img" viewBox="0 0 24 24" width="30" height="30" xmlns="http://www.w3.org/2000/svg"><title>Bluesky (redk1tty.net)</title><path d="M12 10.8c-1.087-2.114-4.046-6.053-6.798-7.995C2.566.944 1.561 1.266.902 1.565.139 1.908 0 3.08 0 3.768c0 .69.378 5.65.624 6.479.815 2.736 3.713 3.66 6.383 3.364.136-.02.275-.039.415-.056-.138.022-.276.04-.415.056-3.912.58-7.387 2.005-2.83 7.078 5.013 5.19 6.87-1.113 7.823-4.308.953 3.195 2.05 9.271 7.733 4.308 4.267-4.308 1.172-6.498-2.74-7.078a8.741 8.741 0 0 1-.415-.056c.14.017.279.036.415.056 2.67.297 5.568-.628 6.383-3.364.246-.828.624-5.79.624-6.478 0-.69-.139-1.861-.902-2.206-.659-.298-1.664-.62-4.3 1.24C16.046 4.748 13.087 8.687 12 10.8Z"/></svg>
+        </a>
+    </div>
+</main>
+<aside id="rightSidebar">
+    <h3>buttons</h3>
+    <img src="/assets/debian.gif" alt="Powered by Debian"><br>
+    <img src="/assets/paws.png" alt="Made with my own two paws"><br>
+    <img src="/assets/vscode.gif" alt="Made with Visual Studio Code"><br>
+    <img src="/assets/desktop.gif" alt="Best viewed on desktop"><br>
+    <img src="/assets/anythingbut.gif" alt="Anything but Chrome"><br>
+    <img src="/assets/firefox.gif" alt="Tested on Firefox"><br>
+</aside>
+</div>
+<br>
+<footer>
+    <!-- FC2 Counter  Starts here -->
+<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39402623&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39402623&main=1" /></noscript>
+<!-- FC2 Counter  Ends here --><br>
+    <span><span style="font-family: 'wendy', sans-serif;">*</span> 2<a href="/outside">0</a>24 redk1tty. copying is an act of love. please copy.</span>
+</footer>
+</body>
+</html>
