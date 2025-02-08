@@ -257,6 +257,7 @@ nav {margin: 0;}
     <img src="/assets/desktop.gif" alt="Best viewed on desktop"><br>
     <img src="/assets/anythingbut.gif" alt="Anything but Chrome"><br>
     <img src="/assets/firefox.gif" alt="Tested on Firefox"><br>
+    <a href="#" onclick="random()"><img src="/assets/unknown.png" alt="An image that appears to have failed to load"></a>
 </aside>
 </div>
 <br>
@@ -266,5 +267,19 @@ nav {margin: 0;}
 <!-- FC2 Counter  Ends here --><br>
     <span><span style="font-family: 'wendy', sans-serif;">*</span> 2<a href="/outside">0</a>25 redk1tty. copying is an act of love. please copy.</span>
 </footer>
+<script>
+function random() {
+	const urls = [
+  		"https://vea.st",
+  		"https://deadairrecords.com",
+  		"https://bsky.app/profile/c-174-55-40-71.hsd1.pa.comcast.net",
+  		"https://busybox.sucks.win",
+        	"https://archlinux.org"
+	];
+
+	const randomIndex = Math.floor(Math.random() * urls.length);
+	window.location.href = urls[randomIndex];
+}
+</script>
 </body>
 </html>
