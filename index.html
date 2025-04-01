@@ -136,9 +136,20 @@ BEWARE:<br>This page has autoplaying music<br><br>
 <script src="/assets/cursor.js"></script>
 <script>
 function enter() {
-  document.getElementById('entry').style.display = "none";
   document.getElementById('cursor').style.display = "none";
   document.getElementById("music").play();
+	var fadeTarget = document.getElementById("entry");
+    var fadeEffect = setInterval(function () {
+        if (!fadeTarget.style.opacity) {
+            fadeTarget.style.opacity = 1;
+        }
+        if (fadeTarget.style.opacity > 0) {
+            fadeTarget.style.opacity -= 0.01;
+        } else {
+            clearInterval(fadeEffect);
+      fadeTarget.style.display = "none";
+        }
+    }, 0.5);
 }
 
 function getRandomIntInclusive(min, max) {
