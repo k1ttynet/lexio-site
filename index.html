@@ -1,3 +1,168 @@
-<meta http-equiv="refresh" content="0; url=/home" />
-<link rel="me" href="https://catrat.social/@doom" />
-<p><a href="/home">i'll make something better eventually</a></p>
+<!DOCTYPE html>
+<html>
+<head>
+<title>LEXIO@K1TTY.NET</title>
+<style>
+@import url('https://fonts.cdnfonts.com/css/perfect-dos-vga-437');
+body {
+    cursor: url(data:application/octet-stream;base64,AAACAAEAICACAAAAAAAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAAAAGAAAADAAAAAwAAAAYAAABGAAAAbAAAAHwAAAB/gAAAfwAAAH4AAAB8AAAAeAAAAHAAAABgAAAAQAAAAAAAAAAAAAAA//////////////////////////////////////////////////////////////////////5////8P////D////h///94f///MP///xD///8B////AB///wA///8Af///AP///wH///8D////B////w////8f////P////3////8=) 0 0,default!important
+}
+
+.clickable {
+    cursor: url(data:application/octet-stream;base64,AAACAAEAICACAAUAAQAwAQAAFgAAACgAAAAgAAAAQAAAAAEAAQAAAAAAgAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/wAAAP8AAAH/gAAB/4AAA/+AAAP/wAAH/8AABf/AAA3/wAAd/8AAGf7AAAG2wAABtoAAAbYAAAGwAAABgAAAAYAAAAGAAAABgAAAAYAAAAAAAAA//////////////////////////////////////////////////////gB///4Af//+AH///AA///wAP//4AD//+AAf//AAH//wAB//4AAf/8AAH//AAB//xAAf//wAP//8AH///AH///wP///8P////D////w////8P////n///8=) 0 0,pointer!important
+}
+.bootstra-enable-cursor *, body.bootstra-enable-cursor {
+  cursor: none !important;
+}
+#cursor {
+  mix-blend-mode: difference;
+  position: absolute;
+  background-color: #bbb;
+  pointer-events: none;
+  width: 8px;
+  height: 14px;
+  z-index: 20000;
+}
+body {
+	margin: 0;
+    overflow: hidden;
+    background: url('/assets/bg.gif');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.bottom {
+	position: absolute;
+    bottom:0;
+    width: 100%;
+    text-align: right;
+    z-index: 9998;
+}
+.tv {
+	transform: translate(0, 4px);
+}
+.bottombar {
+	padding: 15px;
+    background: black;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    z-index: 9999;
+}
+.entry {
+  position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    z-index: 10000;
+    color: #bbb;
+    cursor: none;
+    font-family: 'Perfect DOS VGA 437', sans-serif;
+    text-align: center;
+}
+.lol {
+  position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: -500;
+}
+    .center {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.entry a {
+  color: #bbb;
+  cursor: none;
+}
+.entry a:hover {
+  background: #bbb;
+  color: black;
+  cursor: none;
+}
+#adimg {
+  position: absolute;
+  z-index:-500;
+  transform: translate(1px, 16px);
+}
+.tve {
+  position: absolute;
+  right: 0;
+  z-index: 9999;
+  transform: translate(-30px, -220px);
+}
+    .centeriframe {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% - 50px), calc(-50% - 37px));
+  z-index: 9998;
+}
+.he {
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(calc(-50% + 350px), calc(-50%));
+}
+</style>
+</head>
+<body>
+<audio src="/assets/kendall64.mp3" id="music" loop></audio>
+<div class="entry" id="entry">
+<div class="center">
+BEWARE:<br>This page has autoplaying music<br><br>
+[<a onclick="enter()">ENTER</a>]
+</div>
+</div>
+<div class="lol"></div>
+<div class="centeriframe">
+<iframe src="/home.html" border="none" width="700" height="480" style="border: none; border-radius: 50px;"></iframe>
+<img src="https://files.catbox.moe/be0fds.gif" class="he" height="680">
+</div>
+<div class="bottom">
+<div class="tve">
+<img src="/assets/ads/static.gif" height="180" id="adimg">
+<a onclick="adclick()" class="clickable"><img src="/assets/tv.gif" class="tv"></a>
+</div>
+<div class="bottombar">
+<a href="https://doom.pet" class="clickable"><img src="/assets/doompet.gif"></a>
+</div>
+</div>
+<div id="cursor"></div>
+<script src="/assets/cursor.js"></script>
+<script>
+function enter() {
+  document.getElementById('entry').style.display = "none";
+  document.getElementById('cursor').style.display = "none";
+  document.getElementById("music").play();
+}
+
+function getRandomIntInclusive(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+setInterval(function () {
+document.getElementById("adimg").src = "/assets/ads/static.gif";
+setTimeout(() => {
+  document.getElementById("adimg").src = "/assets/ads/" + getRandomIntInclusive(1, 3)  + ".gif";
+}, "800");
+
+}, 10000);
+function adclick() {
+  if (document.getElementById("adimg").src.includes("1.gif")) {
+    window.open("https://deadairrecords.com", "_blank");
+  } else if (document.getElementById("adimg").src.includes("2.gif")) {
+    window.open("https://bsky.app/profile/did:plc:oqwki5d6jo4uem27wd3a3qr5", "_blank");
+  } else if (document.getElementById("adimg").src.includes("3.gif")) {
+    window.open("https://chadthundercock.com/~lexio/", "_blank");
+  }
+}
+</script>
+</body>
+</html>
